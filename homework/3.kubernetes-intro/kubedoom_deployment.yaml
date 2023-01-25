@@ -7,9 +7,9 @@ spec:
   replicas: 1
   strategy:
     type: rollingUpdate
-      rollingUpdate:
-        maxSurge: 0
-        maxUnavailable: 1
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: kubedoom
